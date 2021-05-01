@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- xml/step1.xml -->
+<MotionScene
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TODO: Define a Transition -->
+    <Transition
+        app:constraintSetStart="@id/start"
+        app:constraintSetEnd="@id/end"
+        app:duration="2000">
+        <!-- TODO: Handle clicks -->
+        <!-- MotionLayout will handle clicks on @id/red_star to "toggle" the animation between the start and end -->
+        <OnClick
+            app:targetId="@id/imageViewAndroidJetpack"
+            app:clickAction="toggle"/>
+            <!-- clickAction: jumpToEnd | jumpToStart | toggle | transitionToEnd | transitionToStart -->
+    </Transition>
+
+    <!-- TODO: Define @id/start - The id name is just a good convention :D -->
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/imageViewAndroidJetpack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </ConstraintSet>
+
+    <!-- TODO: Define @id/end -->
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/imageViewAndroidJetpack"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </ConstraintSet>
+</MotionScene>
