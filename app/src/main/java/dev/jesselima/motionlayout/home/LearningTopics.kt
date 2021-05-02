@@ -11,9 +11,16 @@ data class LearningTopics(
 )
 
 val learningTopics = listOf(
-	LearningTopics("Basic Animation",
-		"Animations with Motion Layout",
-		"Learn how to build a basic animation with Motion Layout.",
+	LearningTopics(
+		title = "Basic Animation",
+		name = "Animations with Motion Layout",
+		caption = "Learn how to build a basic animation with Motion Layout that respond to click events.",
 		R.id.basicAnimationFragment
-	)
+	),
+	LearningTopics(
+		title = "Drag Events",
+		name = "Animating based on drag events",
+		caption = "Learn how to control animations with drag events.",
+		R.id.dragAnimationFragment
+),
 )

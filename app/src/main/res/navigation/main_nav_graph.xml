@@ -14,8 +14,12 @@
             android:id="@+id/navigateToBasicAnimation"
             app:destination="@id/basicAnimationFragment"
             app:enterAnim="@android:anim/slide_in_left"
-            app:popEnterAnim="@android:anim/slide_in_left"
-            />
+            app:popEnterAnim="@android:anim/slide_in_left"/>
+        <action
+            android:id="@+id/navigateToDragAnimation"
+            app:destination="@id/basicAnimationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"/>
     </fragment>
 
     <fragment
@@ -23,5 +27,11 @@
         android:name="dev.jesselima.motionlayout.BasicAnimationFragment"
         android:label="Basic Animation"
         tools:layout="@layout/fragment_basic_animation"/>
+
+    <fragment
+        android:id="@+id/dragAnimationFragment"
+        android:name="dev.jesselima.motionlayout.DragAnimationFragment"
+        android:label="Drag Animation"
+        tools:layout="@layout/fragment_drag_animation"/>
 
 </navigation>
