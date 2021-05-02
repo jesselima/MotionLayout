@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/drag_animation"
+    app:layoutDescription="@xml/motion_scene_drag_animation"
     tools:context=".home.MainActivity">
 
     <ImageView
