@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/basic_animation_motion_scene"
+    app:layoutDescription="@xml/basic_animation"
     tools:context=".home.MainActivity">
 
     <ImageView
@@ -17,6 +17,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/red_start" />
+        android:contentDescription="@string/red_star" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

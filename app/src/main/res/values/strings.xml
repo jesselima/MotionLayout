@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">MotionLayout</string>
-    <string name="red_start">Red Start</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="red_star">Red Star</string>
 </resources>
