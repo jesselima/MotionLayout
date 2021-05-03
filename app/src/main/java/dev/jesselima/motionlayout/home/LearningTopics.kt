@@ -15,12 +15,18 @@ val learningTopics = listOf(
 		title = "Basic Animation",
 		name = "Animations with Motion Layout",
 		caption = "Learn how to build a basic animation with Motion Layout that respond to click events.",
-		R.id.basicAnimationFragment
+		navigationId = R.id.basicAnimationFragment
 	),
 	LearningTopics(
 		title = "Drag Events",
 		name = "Animating based on drag events",
 		caption = "Learn how to control animations with drag events.",
-		R.id.dragAnimationFragment
-),
+		navigationId = R.id.dragAnimationFragment
+	),
+	LearningTopics(
+		title = "Modifying a path",
+		name = "Adding path to animation",
+		caption = "Learn how to use KeyFrames to modify a path between start and end.",
+		navigationId = R.id.pathAnimationFragment
+	),
 )
