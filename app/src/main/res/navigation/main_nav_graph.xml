@@ -25,6 +25,11 @@
             app:destination="@id/pathAnimationFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:popEnterAnim="@android:anim/slide_in_left"/>
+        <action
+            android:id="@+id/navigateToComplexPathAnimation"
+            app:destination="@id/complexPathAnimationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"/>
     </fragment>
 
     <fragment
@@ -44,5 +49,11 @@
         android:name="dev.jesselima.motionlayout.PathAnimationFragment"
         android:label="Path Animation"
         tools:layout="@layout/fragment_path_animation"/>
+
+    <fragment
+        android:id="@+id/complexPathAnimationFragment"
+        android:name="dev.jesselima.motionlayout.ComplexPathAnimationFragment"
+        android:label="Complex Path Animation"
+        tools:layout="@layout/fragment_complex_path_animation"/>
 
 </navigation>

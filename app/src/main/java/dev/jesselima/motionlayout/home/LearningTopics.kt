@@ -29,4 +29,10 @@ val learningTopics = listOf(
 		caption = "Learn how to use KeyFrames to modify a path between start and end.",
 		navigationId = R.id.pathAnimationFragment
 	),
+	LearningTopics(
+		title = "Complex Paths",
+		name = "Adding multiple paths to animation",
+		caption = "Learn how to use KeyFrames to build complex paths through multiple KeyFrames.",
+		navigationId = R.id.complexPathAnimationFragment
+	),
 )
