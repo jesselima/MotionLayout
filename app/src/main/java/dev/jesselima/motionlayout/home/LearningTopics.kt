@@ -35,4 +35,10 @@ val learningTopics = listOf(
 		caption = "Learn how to use KeyFrames to build complex paths through multiple KeyFrames.",
 		navigationId = R.id.complexPathAnimationFragment
 	),
+	LearningTopics(
+		title = "Complex Paths - The crazy moon",
+		name = "Another example of adding multiple paths to animation",
+		caption = "The moon has drunk some (many) beers.",
+		navigationId = R.id.complexPathCrazyMoonAnimationFragment
+	),
 )
