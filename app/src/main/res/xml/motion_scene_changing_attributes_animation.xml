@@ -40,6 +40,12 @@
                 app:motionTarget="imageViewTheMoon"
                 android:alpha="0.0"/>
 
+            <!-- INFO - This KeyAttribute keeps the alpha of@id/credits at 0.0 for the first 85% of the animation -->
+            <KeyAttribute
+                app:framePosition="85"
+                app:motionTarget="@id/credits"
+                android:alpha="0.0"/>
+
         </KeyFrameSet>
         <OnClick
             app:targetId="@id/imageViewTheMoon"
