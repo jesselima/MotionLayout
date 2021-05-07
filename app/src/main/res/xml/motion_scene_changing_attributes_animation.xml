@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Transition
+        app:constraintSetStart="@id/start"
+        app:constraintSetEnd="@id/end"
+        app:duration="3000">
+        <KeyFrameSet>
+
+            <KeyPosition
+                    app:framePosition="50"
+                    app:keyPositionType="parentRelative"
+                    app:motionTarget="@id/imageViewTheMoon"
+                    app:percentY="0.6" />
+            <KeyPosition
+                    app:framePosition="10"
+                    app:motionTarget="@id/imageViewTheMoon"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.8" />
+            <KeyPosition
+                    app:framePosition="90"
+                    app:motionTarget="@id/imageViewTheMoon"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.8" />
+
+            <KeyAttribute
+                app:framePosition="50"
+                app:motionTarget="@id/imageViewTheMoon"
+                android:scaleY="2.0"
+                android:scaleX="2.0"
+                android:rotation="-360"/>
+            <KeyAttribute
+                app:framePosition="100"
+                app:motionTarget="@id/imageViewTheMoon"
+                android:rotation="-720"/>
+            <KeyAttribute
+                app:framePosition="85"
+                app:motionTarget="imageViewTheMoon"
+                android:alpha="0.0"/>
+
+        </KeyFrameSet>
+        <OnClick
+            app:targetId="@id/imageViewTheMoon"
+            app:clickAction="toggle"/>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/imageViewTheMoon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <Constraint
+            android:id="@id/credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:alpha="0.0"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewTheMoon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageViewTheMoon" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/imageViewTheMoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@id/credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewTheMoon"
+            app:layout_constraintTop_toTopOf="@id/imageViewTheMoon" />
+    </ConstraintSet>
+</MotionScene>

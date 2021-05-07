@@ -41,4 +41,9 @@ val learningTopics = listOf(
 		caption = "The moon has drunk some (many) beers.",
 		navigationId = R.id.complexPathCrazyMoonAnimationFragment
 	),
+	LearningTopics("Attributes change",
+		name = "Changing attributes with motion",
+		caption = "Learn how to resize and rotate views during animations.",
+		navigationId =  R.id.changingAttributesAnimationFragment
+	),
 )
