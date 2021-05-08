@@ -32,6 +32,12 @@ https://user-images.githubusercontent.com/17894156/117292869-0f726b80-ae47-11eb-
 https://user-images.githubusercontent.com/17894156/117538783-0a93f000-afde-11eb-9b92-15505c7c130d.mp4
 
 
+### Drag events and complex paths
+
+https://user-images.githubusercontent.com/17894156/117540500-46cb4e80-afe6-11eb-8b83-36d852560e4a.mp4
+
+
+
 
 
 
