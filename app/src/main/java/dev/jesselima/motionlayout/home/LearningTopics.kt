@@ -58,4 +58,10 @@ val learningTopics = listOf(
 		caption = "Learn how to control motion through complex paths with OnSwipe.",
 		navigationId = R.id.dragWithComplexPathsAnimationFragment
 	),
+	LearningTopics(
+		title = "Animation and code",
+		name = "Running motion with code",
+		caption = "Learn how to use MotionLayout to build complex collapsing toolbar animations.",
+		navigationId = R.id.motionAnimationWithCodeFragment
+	),
 )
