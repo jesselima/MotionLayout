@@ -40,6 +40,11 @@
             app:destination="@id/changingAttributesAnimationFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:popEnterAnim="@android:anim/slide_in_left"/>
+        <action
+            android:id="@+id/navigateToCustomAttributesAnimation"
+            app:destination="@id/customAttributesAnimationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"/>
     </fragment>
 
     <fragment
@@ -75,7 +80,13 @@
     <fragment
         android:id="@+id/changingAttributesAnimationFragment"
         android:name="dev.jesselima.motionlayout.ChangingAttributesAnimationFragment"
-        android:label="Dynamic Attributes Animation"
+        android:label="Changing Attributes Animation"
         tools:layout="@layout/fragment_changing_attributes_animation"/>
+
+    <fragment
+        android:id="@+id/customAttributesAnimationFragment"
+        android:name="dev.jesselima.motionlayout.CustomAttributesAnimationFragment"
+        android:label="Custom Animation Attributes"
+        tools:layout="@layout/fragment_custom_attributes_animation"/>
 
 </navigation>

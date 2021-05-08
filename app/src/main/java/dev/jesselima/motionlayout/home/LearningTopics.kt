@@ -46,4 +46,10 @@ val learningTopics = listOf(
 		caption = "Learn how to resize and rotate views during animations.",
 		navigationId =  R.id.changingAttributesAnimationFragment
 	),
+	LearningTopics(
+		title = "Custom Attributes",
+		name = "Changing custom attributes",
+		caption = "Learn how to change custom attributes during motion.",
+		R.id.customAttributesAnimationFragment
+	),
 )
