@@ -45,6 +45,11 @@
             app:destination="@id/customAttributesAnimationFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:popEnterAnim="@android:anim/slide_in_left"/>
+        <action
+            android:id="@+id/navigateToDragWithComplexPathsAnimation"
+            app:destination="@id/dragWithComplexPathsAnimationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"/>
     </fragment>
 
     <fragment
@@ -88,5 +93,11 @@
         android:name="dev.jesselima.motionlayout.CustomAttributesAnimationFragment"
         android:label="Custom Animation Attributes"
         tools:layout="@layout/fragment_custom_attributes_animation"/>
+
+    <fragment
+        android:id="@+id/dragWithComplexPathsAnimationFragment"
+        android:name="dev.jesselima.motionlayout.DragWithComplexPathsAttributesAnimationFragment"
+        android:label="Drag with complex paths"
+        tools:layout="@layout/fragment_drag_with_complex_paths_animation"/>
 
 </navigation>

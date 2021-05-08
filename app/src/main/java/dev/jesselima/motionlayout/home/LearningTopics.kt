@@ -52,4 +52,10 @@ val learningTopics = listOf(
 		caption = "Learn how to change custom attributes during motion.",
 		R.id.customAttributesAnimationFragment
 	),
+	LearningTopics(
+		title = "Drag with complex paths",
+		name = "OnSwipe interactions with complex paths",
+		caption = "Learn how to control motion through complex paths with OnSwipe.",
+		navigationId = R.id.dragWithComplexPathsAnimationFragment
+	),
 )
